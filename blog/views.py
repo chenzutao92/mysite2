@@ -4,5 +4,5 @@ from .models import Block
 
 def index(request):
     blocks = Block.objects.all()
-    return render(request, 'index.html', {'blocks': blocks})
+    return render(request, 'blog/index.html', {'blocks': blocks})
 
